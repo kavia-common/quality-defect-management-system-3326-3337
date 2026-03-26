@@ -1,22 +1,4 @@
-# SQLite connection methods (canonical for Quality Defect Management System)
-#
-# IMPORTANT: The Django backend should be configured to use THIS SAME FILE
-# to avoid split datasets (backend/db.sqlite3 vs database/myapp.db).
-#
-# Python:
-#   sqlite3.connect('/home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db')
-#
-# Connection string:
-#   sqlite:////home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db
-#
-# File path:
-#   /home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db
-#
-# Canonical schema overview:
-#   - workflow_statuses: status/workflow definitions
-#   - defects: core defect record referencing workflow_statuses
-#   - five_why_analyses: 5-Why root cause analysis (1:1 with defect)
-#   - corrective_actions: corrective actions (1:N with defect)
-#   - defect_history: comments + audit/event history (1:N with defect)
-#
-# NOTE: Run `python init_db.py` to (re)create/ensure the schema is present.
+# SQLite connection methods (canonical for Quality Defect Management System):
+# Python: sqlite3.connect('/home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db')
+# Connection string: sqlite:////home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db
+# File path: /home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db
