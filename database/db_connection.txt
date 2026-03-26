@@ -1,0 +1,4 @@
+# SQLite connection methods:
+# Python: sqlite3.connect('myapp.db')
+# Connection string: sqlite:////home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db
+# File path: /home/kavia/workspace/code-generation/quality-defect-management-system-3326-3337/database/myapp.db
